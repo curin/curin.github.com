@@ -1,6 +1,6 @@
 # Configuration for jekyll
 # NOTICE: GitHub forces to set `safe: true` in order to prohibit using plugins.
-safe: false
+safe: true
 source: .
 destination: ./_site
 plugins: ./_plugins
@@ -16,7 +16,7 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
 # * Project page:
 #   url: http://USERNAME.github.com/REPOSITORY
 #   baseurl: /REPOSITORY
-url: http://USERNAME.github.com
+url: http://curin.github.com
 baseurl: 
 
 # Configuration for permalink
@@ -25,9 +25,9 @@ permalink: /blog/:year/:month/:title/
 
 # Configuration for site
 title: The Code Folio
-description: A personal log of life coding.
-author: USERNAME
-email: USERNAME@example.com
+description: A personal portfolio for my coding career.
+author: Andrew Davis
+email: davandre@umflint.edu
 
 # Configuration for blog
 lang: ja
@@ -110,16 +110,16 @@ facebook:
     locale: ja_JP
 
 twitter:
-    username: twitterapi
+    username: CurinAskara
     count: 5
     exclude_replies: true
     show_screen_name: true
     show_follower_count: false
 #    widget_id: 243046062967885824
 
-#github:
-#    username: USERNAME
-#    count: 5
+github:
+    username: Curin
+    count: 5
 
 pocket: true
 
