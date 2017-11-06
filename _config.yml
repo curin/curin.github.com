@@ -1,6 +1,6 @@
 # Configuration for jekyll
 # NOTICE: GitHub forces to set `safe: true` in order to prohibit using plugins.
-safe: false
+safe: true
 source: .
 destination: ./_site
 plugins: ./_plugins
@@ -16,7 +16,11 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
 # * Project page:
 #   url: http://USERNAME.github.com/REPOSITORY
 #   baseurl: /REPOSITORY
+<<<<<<< HEAD
 url: http://curin.github.com
+=======
+url: https://curin.github.com
+>>>>>>> master
 baseurl: 
 
 # Configuration for permalink
@@ -117,9 +121,9 @@ twitter:
     show_follower_count: false
 #    widget_id: 243046062967885824
 
-#github:
-#    username: USERNAME
-#    count: 5
+github:
+    username: curin
+    count: 5
 
 pocket: true
 
