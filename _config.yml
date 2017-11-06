@@ -16,7 +16,7 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
 # * Project page:
 #   url: http://USERNAME.github.com/REPOSITORY
 #   baseurl: /REPOSITORY
-url: http://curin.github.com
+url: https://curin.github.com
 baseurl: 
 
 # Configuration for permalink
@@ -118,7 +118,7 @@ twitter:
 #    widget_id: 243046062967885824
 
 github:
-    username: Curin
+    username: curin
     count: 5
 
 pocket: true
