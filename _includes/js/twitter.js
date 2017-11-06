@@ -7,7 +7,7 @@
 
 		var getTweets = function(user, opts) {
 			return $.ajax({
-				url: 'https://api.twitter.com/1/statuses/user_timeline/' + user + '.json',
+				url: 'https://api.twitter.com/1.1/statuses/user_timeline/' + user + '.json',
 				data: opts,
 				dataType: 'jsonp'
 			});
