@@ -35,8 +35,16 @@ task :default => :preview
 #----------------------------------------------------------------------
 desc "preview on http://localhost:4000/"
 task :preview do
-# jekyll('--pygments --auto --server')
-  jekyll('--auto --server')
+  jekyll('serve')
+end
+
+#----------------------------------------------------------------------
+# Preview a blog with draft.
+# @usage: rake draft
+#----------------------------------------------------------------------
+desc "preview with draft on http://localhost:4000/"
+task :draft do
+  jekyll('serve --drafts')
 end
 
 #----------------------------------------------------------------------
@@ -65,16 +73,16 @@ task :post, :title do |t, args|
     post.puts "layout: post"
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "title: \"#{title.gsub(/-/,' ').gsub(/&/,'&amp;')}\""
-    post.puts "description: \"\""
-    post.puts "keywords: \"\""
-    post.puts "excerpt: \"\""
-    post.puts "thumbnail: \"\""
-    post.puts "category: [uncategorized]"
+    # post.puts "description: \"\""
+    # post.puts "keywords: \"\""
+    # post.puts "excerpt: \"\""
+    # post.puts "thumbnail: \"\""
+    post.puts "categories: [uncategorized]"
     post.puts "tags: []"
     post.puts "comments: true"
     post.puts "published: true"
     post.puts "---"
-    post.puts "\n<!--more-->"
+    # post.puts "\n<!--more-->"
   end
 end
 
