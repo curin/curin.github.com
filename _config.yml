@@ -15,9 +15,9 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
 # * `baseurl`: Being set as absolute path is recommended.
 # * No need '/' at the end of url/path.
 # * Project page:
-#   url: http://fhiyo.github.com/REPOSITORY
+#   url: http://curin.github.com/REPOSITORY
 #   baseurl: /REPOSITORY
-url: https://fhiyo.github.io
+url: https://curin.github.io
 baseurl:
 
 # Configuration for permalink
@@ -27,11 +27,11 @@ permalink: /blog/:year/:month/:title/
 # Configuration for site
 title: 備忘録置いとく
 description: 知ったことをメモして置いておくところ
-author: fhiyo
-email: fhiyo1201@gmail.com
+author: Andrew Davis
+email: Davandre@umflint.edu
 
 # Configuration for blog
-lang: ja
+lang: en
 paginate: 4
 columns: 1
 date_format: "%B %d, %Y"
@@ -94,7 +94,7 @@ jquery_ver: 1.10.2
 #-----------------------------------
 
 disqus:
-    short_name: https-fhiyo-github-io
+    short_name: https-curin-github-io
     comment_count: true
     developer_mode: true
 
@@ -111,7 +111,7 @@ disqus:
 # `locale`: ja_JP, en_US, es_LA, fr_FR, de_DE, it_IT, zh_CN, ko_KR, ...
 facebook:
     xfbml: false
-    locale: ja_JP
+    locale: en_US
 
 # twitter:
 #     username: fhiyo_
@@ -122,7 +122,7 @@ facebook:
 # #    widget_id: 243046062967885824
 
 github:
-   username: fhiyo
+   username: curin
    count: 5
 
 pocket: true
