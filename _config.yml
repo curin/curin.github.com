@@ -51,8 +51,8 @@ navbar_list:
     link: /blog/categories
   - name: Tags
     link: /blog/tags
-# - name: Project
-#   link: /project/
+- name: Project
+  link: /project/
 - name: About
   link: /about
 
