@@ -94,7 +94,7 @@ jquery_ver: 1.10.2
 #-----------------------------------
 
 disqus:
-    short_name: https-curin-github-io
+    short_name: curin-github-io
     comment_count: true
     developer_mode: true
 
