@@ -1,7 +1,16 @@
 <hgroup>
-	<h1 id="site-title">
-		<a class="brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-	</h1>
+	<table width="100%">
+		<tr>
+			<td>
+				<img src="{{ site.url }}/img/logo.png" height="50" width="50">
+			</td>
+			<td>
+				<h1 id="site-title">
+					<a class="brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+				</h1>
+			</td>
+		</tr>
+	</table>
 {% if site.description %}
 	<h2 id="site-description">
 		{{ site.description }}
