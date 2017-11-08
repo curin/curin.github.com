@@ -53,6 +53,8 @@ navbar_list:
     link: /blog/tags
 - name: Project
   link: /project/
+- name: Resume
+  link: /resume
 - name: About
   link: /about
 
@@ -76,7 +78,7 @@ asides:
     advertisement: true
     recent_posts: true
     archive_tabs: true
-    tweets: false
+    tweets: true
     github: true
 
 # Configuration for pygments
@@ -113,13 +115,13 @@ facebook:
     xfbml: false
     locale: en_US
 
-# twitter:
-#     username: fhiyo_
-#     count: 5
-#     exclude_replies: true
-#     show_screen_name: true
-#     show_follower_count: false
-# #    widget_id: 243046062967885824
+ twitter:
+     username: curinaskara
+     count: 5
+     exclude_replies: true
+     show_screen_name: true
+     show_follower_count: false
+     widget_id: 243046062967885824
 
 github:
    username: curin
