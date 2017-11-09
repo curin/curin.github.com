@@ -8,12 +8,13 @@
 				<h1 id="site-title">
 					<a class="brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
 				</h1>
+
+				{% if site.description %}
+					<h2 id="site-description">
+						{{ site.description }}
+					</h2>
+				{% endif %}
 			</td>
 		</tr>
 	</table>
-{% if site.description %}
-	<h2 id="site-description">
-		{{ site.description }}
-	</h2>
-{% endif %}
 </hgroup>
