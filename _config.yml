@@ -73,12 +73,12 @@ responsive_bp: 768
 # CAUTION: `themes` should be false to put the script.html at the bottom.
 asides:
     about: true
-    search: false
+    search: true
     themes: false
     advertisement: true
     recent_posts: true
     archive_tabs: true
-    tweets: true
+    tweets: false
     github: true
 
 # Configuration for pygments
