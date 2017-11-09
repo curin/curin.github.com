@@ -42,7 +42,7 @@ recent_posts: 5
 
 # Configuration for navbar.html
 navbar_list:
-- name: Blog
+- name: Home
   link: /
   dropdown: &dropdown
   - name: Archives
@@ -75,7 +75,6 @@ asides:
     about: true
     search: true
     themes: false
-    advertisement: true
     recent_posts: true
     archive_tabs: true
     tweets: false
