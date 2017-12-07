@@ -3,3 +3,56 @@ layout: default
 group: Project
 title: Dragonbone Engine
 ---
+<article id="DragonboneEngine" class="container">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+
+        This is a game engine I am working on as both a learning project and a base for future projects which includes
+    <a href="{{ site.url }}/project/Iora">the Ioran Game Series</a>. Over the about five years this project has been in
+    development, the project has changed from being built on XNA, then to SlimDX, to SharpDX using DirectX 11, then
+    SharpDX using DirectX12, and finally utilizing a custom managed wrapper for DirectX12. The initial three changes
+    in the api I used was in order to get a thinner wrapper to better understand DirectX as well with SharpDX having
+    better support than SlimDX. The last change to a custom wrapper had to do with two reasons. First of which is a
+    difference in approach compared to SharpDX which utilizes P/Invoke which the custom wrapper is a managed C++ wrapper.
+    The other reason is to really understand all the available functions of DirectX 12. This is not the only part of the
+    engine that has changed since the projects inception. The Design has grown to fit a proper architecture,
+    namely the Entity-Component-System (ECS) architecture. The project is currently in the early phases as it is currently
+    waiting for the completion of the wrapper.
+
+    <h2>Design Pillars</h2>
+    As the engine is currently designed, there are four design pillars it was made to uphold.
+    <ul>
+        <li>Modular</li>
+        <li>Multi-threaded</li>
+        <li>Multi-window Support</li>
+        <li>Layer-based Cameras</li>
+    </ul>
+
+        These pillars mostly encompass features for the engine itself, but they impact each part of how systems are to be
+    built. The first pillar is modularity and this has to do with the fact that the engine should be adaptable. Ultimately,
+    every project may require unique approaches to solving problems. A general solution will never out perform the
+    specific solution and an engine needs to support that ability in every system. This is planned to be supported by the
+    ECS architecture as it allows for any system to be replaced with a new one or excluded entirely. C#'s interfaces
+    will also allow for another layer of modularity. Every decision in the engine will be to support this idea of being
+    replacable.
+        The second pillar is Multi-threaded or to allow for the system to run on multiple CPU cores. Obviously this has
+    benefit of performance boost on most computers and is now commonplace in engines. The utilization of DirectX 12 will
+    allow for multi-threaded rendering recording. Beyond this my plan is to streamline the process for multithreading to
+    allow for ease of use. This will allow for users of the engine to utilize the multi-thread systems to their advantage
+    and create threads for their own uses.
+        The Third pillar is multi-window support which is rarely seen in games today where computers with more than one
+    monitor is rather common. While this support will have to factor in the availability of multiple monitors for full
+    screen mode the different windows. This feature will be more difficult to include on console titles, but the ability
+    to make that transition just as smooth will also be a goal should this engine expand to consoles.
+        The last pillar is layer-based cameras. The idea behind this is to allow for a scene to be sectioned out into
+    layers which can be turned on and off on a camera basis. Each object will have layers set for which they will be
+    rendered to. If a camera includes a layer for a particular object it will draw that object. This can be broken down
+    beyond and object level to even components of the objects to allow for even more fine tuning. The hope is that this
+    will allow for effects that create similar scenes with any where from slight or glaring differences.
+
+    <h2>Current Progress</h2>
+    Currently, the project is waiting on the DirectX 12 wrapper to be finished before the rest of the engine gets work
+    done. Several prototypes of parts of the system have been developed but none are currently included in the project
+    at this time. Once the wrapper comes close to completion, a more concrete design for the engine will be created.
+</article>

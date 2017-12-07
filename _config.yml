@@ -53,6 +53,11 @@ navbar_list:
     link: /blog/tags
 - name: Project
   link: /project/
+  dropdown: &dropdown
+  - name: Dragonbone
+    link: /project/Dragonbone
+  - name: Ioran Games
+    link: /project/Iora
 - name: Resume
   link: /resume
 - name: About
